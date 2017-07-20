@@ -1,15 +1,7 @@
-<?php
-	$str = 'A_MAE_DO_PEDRO@_$&&%';
-	$encoded = base64_encode($str);
-	echo $encoded;
-	echo "<br/>";
-	echo base64_decode($encoded);
-?>
-
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Site sinistro</title>
+		<title>Project Encode</title>
 		<meta charset="utf-8"/>
 	</head>
 	<body>
@@ -18,7 +10,7 @@
 	<input type="text" name="texto">
 	<input type="submit" value="Encripta"/>
 	</form>
-	<textarea width="600px">
+	<textarea>
 		<?php
 			$t = isset($_GET["texto"])?$_GET["texto"]:"";
 			if ($t == "") {
@@ -38,7 +30,7 @@
 	<input type="text" name="texto2">
 	<input type="submit" value="Decripta"/>
 	</form>
-	<textarea width="600px">
+	<textarea>
 		<?php
 			$t2 = isset($_GET["texto2"])?$_GET["texto2"]:"";
 			if ($t2 == "") {
